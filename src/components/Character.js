@@ -1,9 +1,16 @@
 // Write your Character component here
 import React from "react";
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
+
+const kf = keyframes`
+  from {background-color: #99f3eb;}
+  to {background-color: royalblue;}
+
+`;
 
 const CharacterCard = styled.div`
   background-color: #99f3eb;
+  animation: ${kf} 8s;
   color: #000000;
   width: 200px;
   max-height: 400px;
