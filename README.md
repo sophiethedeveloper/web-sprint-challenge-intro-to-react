@@ -30,11 +30,19 @@ Be prepared to demonstrate your understanding of this week's concepts by answeri
 
 1. What is React JS and what problems does it solve? Support your answer with concepts introduced in class and from your personal research on the web.
 
+   React JS is a JavaScript Library created by Facebook.The main problem solved by react is the development of large applications that have temporal data changes. React only enables the view part, so for model and controller parts you need to use other tools.
+
 1. Describe component state.
+
+  setState() schedules an update to a component’s state object. When state changes, the component responds by re-rendering.
 
 1. Describe props.
 
+   Refers to a technique for sharing code between React components using a prop whose value is a function.
+
 1. What are side effects, and how do you sync effects in a React component to changes of certain state or props?
+
+   A side effect is anything that affects something outside the scope of the function being executed. Fetching data from an API, timers, logging, and manually manipulating the DOM are all examples of side effects. You sync effects using the effect hook which tells React that a component needs to run, or execute, some side effect. 
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade.
 
