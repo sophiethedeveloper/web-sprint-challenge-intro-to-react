@@ -21,11 +21,16 @@ const CharacterImg = styled.img`
     flex-shrink: 2;
 `;
 
+
+
 const Character = props => {
+    const {name, image} = props
     return (
         <CharacterCard>
-            <h2>Character</h2>
-            <CharacterImg alt="random character"/>
+            <h2>{name}</h2>
+            <CharacterImg alt="random character" src={image}/>
         </CharacterCard>
     )
 }
+
+export default Character;
